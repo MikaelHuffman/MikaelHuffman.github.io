@@ -1,14 +1,14 @@
 body{ 
-    background-color:chartreuse;
+    background-color: paleturquoise
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h1 {
     text-align: center;
-    color:blue;
+    color:black;
 }
 h2 {
     text-align: left;
-    color:brown
+    color:black
 }
 
 .projects {
@@ -19,6 +19,6 @@ h2 {
     width: 30%;
     margin: 10px;
     padding: 20px 10px;
-    background: darkred; 
+    background: white; 
     border-radius: 25%;
 }
