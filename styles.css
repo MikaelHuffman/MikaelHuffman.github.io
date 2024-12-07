@@ -1,5 +1,5 @@
 body{ 
-    background-color: paleturquoise;
+    background-color: rgb(243, 233, 220);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h1 {
@@ -7,6 +7,10 @@ h1 {
     color:black;
 }
 h2 {
+    text-align: left;
+    color:black
+}
+h3 { 
     text-align: left;
     color:black
 }
