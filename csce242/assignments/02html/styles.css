@@ -1,38 +1,48 @@
- /* body {
-
+ body { 
+    font-family:'Times New Roman', Times, serif;
+    background:url("images/background.jpg");
+    background-size: cover;
  }
 
  #main {
-
+    background: rgb(74, 207, 243);
+    width: 60%;
+    margin: auto;
+    padding: 2%;
+    border-radius: 5px;
+ }
+  #top-5 { 
+    border-radius: 8px;
+    width: 40%;
+    float:right;
  }
 
  table {
-
+    border-collapse: collapse;
  }
 
  th, td {
-
- }
-
- #top5 { 
-
- }
-
- #logo {
-
+    border:1px rgb(74, 207, 243);
+    padding: 5px 10px;
  }
 
  th {
-
+    background: black;
+    color: darkgoldenrod;
  }
-
- h1 {
-
+ tr {
+    background:black;
+    color: goldenrod;
  }
 
  h2 {
-
+    background:black;
+    color: darkgoldenrod
  }
-*/
+
+ h3 {
+    background:black;
+    color:darkgoldenrod
+ }
 
 
