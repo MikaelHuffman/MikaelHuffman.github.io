@@ -1,0 +1,31 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightslategray;
+}
+
+#main {
+    margin: auto;
+
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: rgb(47 79 79);
+}
+
+p {
+    color: rgb(47 79 79);
+}
+
+a:link {
+    color: rgb(47 79 79);
+    text-decoration:none
+}
+a:visited {
+    color:darkslategray;
+    text-decoration:none
+}
+
