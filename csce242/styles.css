@@ -1,31 +1,81 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: lightslategray;
-}
+    body { 
+        font-family:'Times New Roman', Times, serif;
+        background: lightslategray;
+        background-size: cover;
+    }
+    .assignment a {
+        text-align: center;
+        padding:5px;
+        display: block;
+        text-decoration:none;
+        color: lightslategray;
+    }
 
-#main {
-    margin: auto;
+    .assignment a:hover {
+        background:lightslategray;
+        color:darkslategray;
+    }
+    .assignments { 
+        justify-content:center;
+        gap:10px;
+    }
+    
+    .assignment {
+        background-color: darkslategray;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 450px;
+        padding: 10px;
+        text-align: center;
+        margin: 3%;
+    }
 
-}
+    .assignment img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        color: lightslategray;
+    }
 
-h1 {
-    color: black;
-}
+@media only screen and (min-width: 768px) {
+    .assignment a {
+        text-align: center;
+        padding:5px;
+        display: block;
+        text-decoration:none;
+        color: lightslategray;
+    }
 
-h2 {
-    color: rgb(47 79 79);
-}
+    .assignment a:hover {
+        background:lightslategray;
+        color:darkslategray;
+    }
+    body { 
+        font-family:'Times New Roman', Times, serif;
+        background: lightslategray;
+        background-size: cover;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .assignments {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
 
-p {
-    color: rgb(47 79 79);
+    .assignment {
+        background-color: darkslategray;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 450px;
+        padding: 10px;
+        text-align: center;
+    }
+    p {
+        color: lightslategray;
+    }
 }
-
-a:link {
-    color: rgb(47 79 79);
-    text-decoration:none
-}
-a:visited {
-    color:darkslategray;
-    text-decoration:none
-}
-
