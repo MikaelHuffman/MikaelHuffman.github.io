@@ -1,0 +1,136 @@
+    body {
+     background-color: slategray;   
+     margin:0;
+     text-decoration: none;
+    }   
+
+    #main-header {
+        background:lightslategray;
+        color:white;
+        justify-content: center;
+    }
+
+    .columns {
+        display:flex;
+    }
+
+    #main-nav ul {
+        list-style-type: none; 
+        padding-left:0;
+    }
+
+    #main-nav li {
+        border-bottom:1px solid white;
+    }
+
+    #main-nav li:first-child {
+        border-top:1px solid white;
+    }
+
+    #main-nav a {
+        color:white;
+        padding:10px 5px;
+        display:block;
+        text-decoration: none; 
+    }
+
+    #main-nav a:hover {
+        background:white;
+        color:slategray;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .sidebar {
+            position:absolute;
+            left:0;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .sidebar li {
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+        }
+        .div1-container {
+            display: flex;
+            justify-content: left;
+        }
+
+        .div1 {
+            background-color: slategray;
+            border-radius:2px;
+            text-align: left;
+        }
+
+        .div2-container {
+            display: flex;
+            justify-content: left;
+            margin-top:5px;
+        }
+
+        .div2 {
+            background-color: slategray;
+            border-radius: 2px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .div3-container {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            padding:5px;
+            gap:10px;
+        }
+
+        .div3 {
+            text-align: center;
+            background-color: darkslategray;
+            border-radius: 2px;
+            padding: 10px;
+            width:16%;
+        }
+
+        .div4 {
+            text-align: center;
+            background-color: lightslategray;
+            border-radius: 2px;
+            padding: 10px;
+            width:16%;
+        }
+        
+        .div1 img {
+            float: left;
+        }
+
+        .div2 img {
+            float:left;
+        }
+
+        .div3 img {
+            justify-content: center;
+        }
+
+        .div4 img {
+            justify-content: center;
+        }
+
+        #main-nav li {
+            flex:1;
+        }
+
+        #main-nav li, #main-nav li:first-child {
+            border:none;
+        }
+
+        #main-nav a {
+            text-align: center;
+            padding:5px;
+        }
+
+        #main-nav a:hover {
+            background:slategray;
+            color:white;
+            border-bottom:1px solid white;
+        }
+    }
