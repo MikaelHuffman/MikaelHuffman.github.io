@@ -1,0 +1,103 @@
+:root {
+    --red:#75000a;  
+    --dark-red:#650009;
+    --black:#000000;
+    --blue:#1f404d;
+    --gray:#ededed;
+    --white:#ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.columns {
+    display:flex;
+}
+
+
+
+
+#image-and-box-container {
+    margin: 0;
+    padding: 0;
+}
+
+#iab-image {
+    max-width: 100%;
+    height:auto;
+}
+
+#iab-image img {
+    width: 100%;
+    height:600px;
+}
+
+#iab-image h1 {
+    background:rgba(255,255,255,0.7);
+    color: var(--red);
+    padding: 20px;
+    width: 50%;
+    text-align: right;
+
+    position: absolute;
+    bottom: 38%;
+    left: 0%;
+}
+
+#iab-text {
+    background: var(--white);
+    gap:33%;
+    display:flex;
+}
+
+#iab-text h2 {
+    text-align: left;
+    width: 33%;
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 35px;
+}
+
+
+
+#sbs-text {
+    width:50%;
+    background: var(--red);
+    place-content: center;
+}
+
+#sbs-text p, h1 {
+    color: var(--white);
+    text-align: left;
+    margin-left:33%
+}
+
+#sbs-img {
+    flex:1;
+    margin: 0;
+    padding: 0;
+}
+
+#sbs-img img {
+    width: 100%;
+    height: 550px;
+}
+
+
+
+#three-buttons-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+#tbc-text {
+    text-align: center;
+    width:100%;
+} 
+
+#tbc-buttons li {
+    list-style-type: none;
+}
