@@ -36,6 +36,43 @@
         margin-bottom: 10px;
     }
     
+    
+
+    .project a {
+        text-align: center;
+        padding:5px;
+        display: block;
+        text-decoration:none;
+        color: lightslategray;
+    }
+
+    .project a:hover {
+        background:lightslategray;
+        color:darkslategray;
+    }
+    .projects { 
+        justify-content:center;
+        gap:10px;
+    }
+    
+    .project {
+        background-color: darkslategray;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 450px;
+        padding: 10px;
+        text-align: center;
+        margin: 3%;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+
+
     p {
         color: lightslategray;
     }
@@ -77,5 +114,40 @@
     }
     p {
         color: lightslategray;
+    }
+
+
+
+    .project a {
+        text-align: center;
+        padding:5px;
+        display: block;
+        text-decoration:none;
+        color: lightslategray;
+    }
+
+    .project a:hover {
+        background:lightslategray;
+        color:darkslategray;
+    }
+
+    .projects {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .project {
+        background-color: darkslategray;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 450px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .project iframe {
+        width:430px;
+        height:200px;
     }
 }
