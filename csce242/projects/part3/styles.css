@@ -1,0 +1,118 @@
+:root {
+    --black: black;
+    --gray: gray;
+    --white: white;
+}
+
+body {
+margin: 0;
+padding: 0;    
+}    
+
+#header {
+    text-align: center;
+}
+
+.columns {
+    display: flex;
+}
+
+#main-nav {
+    border: 1px solid black;
+}
+#main-nav ul {
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0;
+}
+
+#main-nav li {
+    padding: 10px;
+}
+#main-nav a {
+    border-left: 1px solid var(--gray);
+    border-right: 1px solid var(--gray);
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#main-nav a:hover {
+    color:white;
+    background:black;
+}
+
+
+#middle-info-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+#middle-info-container p {
+    font-size: xx-large;
+}
+
+#left-text {
+    flex:1;
+}
+
+#middle-image {
+    flex: 1;
+}
+
+#right-text {
+    flex: 1;
+}
+
+#three-images-container {
+    display: flex;
+    gap: 53px;
+
+    margin-top: 30px;
+}
+
+#left-image a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#left-image a:hover {
+    background: var(--gray);
+}
+
+#weekly-opinions, #all-time-opinions, #recent-opinions {
+    text-align: center;
+}
+
+#btn-submit {
+    text-align: center;
+
+}
+
+#btn-submit a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 5px;
+    border: 1px solid var(--black);
+}
+
+#btn-submit a:hover {
+    background: var(--black);
+    color: var(--white);
+    border: 1px solid var(--gray);
+}
+
+#six-images-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+#input {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
