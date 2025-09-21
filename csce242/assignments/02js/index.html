@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nav">
+        <h1>Assignment 8</h1>
+        <h2>If Statements</h2>
+        <p class="mobile-hidden hidden2" id="yes-nav">△</p>
+        <p class="mobile-hidden" id="no-nav">▽</p>
+        <div id="div-nav-bar" class="hidden2">
+            <ul id="nav-bar" class="hidden2">
+                <li id="li-ex1">Exercise 1</li>
+                <li id="li-ex2">Exercise 2</li>
+            </ul>
+        </div>
+    </div>
+    <div id="div-method-container">
+        <div id="div-watering" class="hidden">
+            <p>How many days has it been since you watered your plant?</p>
+            <div id="div-plant1" class="hidden">
+                <img src="images/plant1.png">
+                <p>Your plant is healthy!</p>
+            </div>
+
+            <div id="div-plant2" class="hidden">
+                <img src="images/plant2.png">
+                <p>Your plant needs to be watered.</p>
+            </div>
+
+            <div id="div-plant3" class="hidden">
+                <img src="images/plant3.png">
+                <p>Your plant is dying! Water it immediately!</p>
+            </div>
+
+            <div id="div-plant4" class="hidden">
+                <img src="images/plant4.png">
+                <p>Your plant is dead..</p>
+            </div>
+
+            <input type="range" min="0" max="12" id="input-range">
+            <p id="input-days"></p><p id="input-days2"> days.</p>
+        </div>
+        <div id="div-clock" class="hidden">
+            <h3>Our Digital Clock</h3>
+            <p>The time is:</p>
+            <p id="clock"></p>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+    <script src="js/togglenav.js"></script>
+</body>
+</html>

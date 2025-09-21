@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    background: slategray;
+}
+
+.hidden {
+    display: none;
+}
+
+#nav ul {
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+#nav li {
+    list-style-type: none;
+}
+
+#input-days, #input-days2 {
+    display:inline;
+}
+
+#div-watering, #div-clock {
+    background: lightslategray;
+}
+
+@media only screen and (min-width: 768px) {
+    #div-method-container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    .mobile-hidden {
+        display: none;
+    }
+
+    #div-watering, #div-clock {
+        flex:1;
+    }
+}
+
+@media only screen and (max-width: 768px) {    
+    .hidden2 {
+        display: none;
+    }
+}
