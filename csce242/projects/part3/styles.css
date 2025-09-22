@@ -2,11 +2,16 @@
     --black: black;
     --gray: gray;
     --white: white;
+
+    --primary: lightslategray;
+    --secondary: slategray;
+    --tertiary: darkslategray;
 }
 
 body {
 margin: 0;
 padding: 0;    
+background: var(--primary);
 }    
 
 #header {
