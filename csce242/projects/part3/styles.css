@@ -79,6 +79,18 @@ background: var(--primary);
     margin-top: 30px;
 }
 
+#three-opinions-container {
+    display: flex;
+    gap: 53px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#opinion {
+    padding: 10px;
+    border: 1px solid var(--tertiary);
+}
+
 #left-image a {
     text-decoration: none;
     color: var(--black);
