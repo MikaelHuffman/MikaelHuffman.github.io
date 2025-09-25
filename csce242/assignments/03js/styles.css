@@ -12,7 +12,7 @@ body {
 
 
 /*
-CREDIT TO CODEPEN.IO FOR THE CSS CLOUD ART
+CREDIT TO CODEPEN.IO FOR THE CSS CLOUD ART AND CHATGPT  FOR THE TREE, SUN, MOON ART
 */
 .cloud {
 	width: 350px; height: 120px;
@@ -51,11 +51,101 @@ CREDIT TO CODEPEN.IO FOR THE CSS CLOUD ART
   right: 50px;
   border-radius: 200px;
 }
+
+.tree {
+  position: relative;
+  width: 0;
+  height: 0;
+  margin: 40px auto;
+}
+
+.tree::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 60px;
+  background: saddlebrown; /* trunk */
+  border-radius: 5px;
+}
+
+.tree::after {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: forestgreen; /* leaves */
+  border-radius: 50%;
+  box-shadow: 
+    -60px 20px 0 -20px forestgreen,
+    60px 20px 0 -20px forestgreen,
+    0 -40px 0 -20px forestgreen;
+}
+
+.sun {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 30px gold;
+}
+
+.sun::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: conic-gradient(
+    from 0deg,
+    gold 0deg 20deg,
+    transparent 20deg 40deg
+  );
+  border-radius: 50%;
+  animation: spin 6s linear infinite;
+}
+
+.moon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+  background: silver;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.moon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+}
 /*
-CREDIT TO CODEPEN.IO FOR THE CLOUD ART
+CREDIT TO CODEPEN.IO FOR THE CLOUD ART AND CHATGPT FOR THE TREE, SUN, MOON ART
 */
 
 #cloud-container {
     display:flex;
     gap: 5px;
+}
+
+#tree-container {
+    display: flex;
+    margin-top: 70px;
+}
+
+#sun-moon {
+    position:absolute;
+    right: 0;
+    top: 0;
 }
