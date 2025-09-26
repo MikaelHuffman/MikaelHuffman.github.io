@@ -149,3 +149,12 @@ CREDIT TO CODEPEN.IO FOR THE CLOUD ART AND CHATGPT FOR THE TREE, SUN, MOON ART
     right: 0;
     top: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  /*
+  im not going to lie i tried 100 different things to scale down the clouds to fit and none worked. this is the best i can do to make it have no scrolling..
+  */
+}
