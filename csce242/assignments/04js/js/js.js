@@ -36,7 +36,31 @@
         catPics.append(catContainer);
 
         img.onclick = () => {
-            let img = document.createElement("img");
+            let span = document.getElementById("span-popup");
+
+            let catContainer2 = document.createElement("div");
+            catContainer2.id = "div-after";
+            let img2 = document.createElement("img");
+            img2.src=catsAfter[cat];
+
+            let p2 = document.createElement("p");
+            p2.classList.add("p-x");
+            p2.innerHTML = "x";
+
+            let p3 = document.createElement("p");
+            p3.classList.add("p-header");
+            p3.innerHTML = `${cat} after adoption!`;
+
+            catContainer2.append(p2);
+            catContainer2.append(p3);
+            catContainer2.append(img2);
+            span.append(catContainer2);
+            span.style.display = "flex";
+
+            p2.onclick = () => {
+                document.getElementById("div-after").remove();
+                span.style.display = "none";
+            }
         }
     }
 
