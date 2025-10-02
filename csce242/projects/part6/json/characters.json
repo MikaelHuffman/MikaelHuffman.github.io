@@ -1,0 +1,52 @@
+[
+    {
+        "id": "C01",
+        "name": "Wall Breakers",
+        "elixir": "2",
+        "evo": true
+    },
+    {
+        "id": "C02",
+        "name": "Valkyrie",
+        "elixir": "4",
+        "evo": true
+    },
+    {
+        "id": "C03",
+        "name": "Magic Archer",
+        "elixir": "4",
+        "evo": false
+    },
+    {
+        "id": "C04",
+        "name": "Firecracker",
+        "elixir": "3",
+        "evo": true
+    },
+    {
+        "id": "C05",
+        "name": "Mighty Miner",
+        "elixir": "4",
+        "evo": false
+    },
+    {
+        "id": "C06",
+        "name": "Log",
+        "elixir": "2",
+        "evo": false
+    },
+    {
+        "id": "C07",
+        "name": "Miner",
+        "elixir": "3",
+        "evo": false
+    },
+    {
+        "id": "C08",
+        "name": "Bomb Tower",
+        "elixir": "4",
+        "evo": false
+    }
+    
+    
+]
