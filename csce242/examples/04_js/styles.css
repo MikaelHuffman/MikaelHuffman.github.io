@@ -150,6 +150,24 @@ h2 {
     font-size: 1.2em;
 }
 
+#dog-list {
+    display: flex;
+}
+
+.dog { 
+    flex: 1;
+    padding: 5px;
+    margin: 5px;
+}
+
+.dog img {
+    max-width: 50%;
+}
+
+.transparent {
+    visibility: hidden;
+}
+
 @keyframes fun {
     0% {
         background-color: red;
