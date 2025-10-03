@@ -3,7 +3,7 @@
         background: lightslategray;
         background-size: cover;
     }
-    
+
     .assignment a {
         text-align: center;
         padding:5px;
@@ -17,8 +17,9 @@
         color:darkslategray;
     }
     .assignments { 
-        justify-content:center;
-        gap:10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     
     .assignment {
@@ -50,8 +51,9 @@
         color:darkslategray;
     }
     .projects { 
-        justify-content:center;
-        gap:10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     
     .project {
