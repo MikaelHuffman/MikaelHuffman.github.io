@@ -3,6 +3,7 @@
         background: lightslategray;
         background-size: cover;
     }
+    
     .assignment a {
         text-align: center;
         padding:5px;
@@ -86,14 +87,17 @@
         background:lightslategray;
         color:darkslategray;
     }
+
     body { 
         font-family:'Times New Roman', Times, serif;
         background: lightslategray;
         background-size: cover;
     }
+
     h1, h2 {
         text-align: center;
     }
+
     .assignments {
         display: flex;
         flex-wrap: wrap;
@@ -109,6 +113,7 @@
         padding: 10px;
         text-align: center;
     }
+
     p {
         color: lightslategray;
     }
