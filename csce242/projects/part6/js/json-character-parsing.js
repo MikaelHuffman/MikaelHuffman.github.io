@@ -1,5 +1,5 @@
 const getDecks = async () => {
-    const url = "data/decks.json";
+    const url = "https://mikaelhuffman.github.io/csce242/projects/part6/data/decks.json";
     try {
         const response = await fetch(url);
         return response.json();
