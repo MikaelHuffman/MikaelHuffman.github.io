@@ -6,3 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
         mainNav.classList.toggle("active");
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const metadeck = document.getElementById("md1");
+    
+});

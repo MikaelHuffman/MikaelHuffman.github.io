@@ -216,6 +216,12 @@ body {
     display: none;
 }
 
+#image-card a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
 @media only screen and (max-width: 768px) {
     #nav-toggle {
         display: block;
@@ -295,7 +301,6 @@ body {
         text-align: center;
     }
 
-    /* show left/right texts at larger small-screen widths */
     @media (min-width: 520px) {
         #left-text2, #right-text2 {
             display: block;

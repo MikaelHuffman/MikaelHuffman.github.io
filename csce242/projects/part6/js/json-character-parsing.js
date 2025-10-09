@@ -22,7 +22,6 @@ const showDecks = async () => {
         const img = document.createElement("img");
         img.src = deck.img_name;
         img.alt = deck.name;
-
         const title = document.createElement("h3");
         title.textContent = deck.name;
 
