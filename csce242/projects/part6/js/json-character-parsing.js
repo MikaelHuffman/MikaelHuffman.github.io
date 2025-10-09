@@ -1,21 +1,44 @@
-const getCharacters = async() => {
-    const url = "https://mikaelhuffman.github.io/csce242/projects/part6/json/characters.json"
-
+const getDecks = async () => {
+    const url = "data/decks.json";
     try {
         const response = await fetch(url);
         return response.json();
-    }
-    catch(error) {
-        console.log("sorry");
+    } catch (error) {
+        console.error("Error fetching decks.json:", error);
+        return [];
     }
 };
 
-const showCharacters = async() => {
-    const characters = await getCharacters();
+const showDecks = async () => {
+    const decks = await getDecks();
+    const container = document.getElementById("decks-container");
 
-    characters.forEach((characters)=>{
-        console.log(characters.name);
+    container.innerHTML = "";
+
+    decks.forEach(deck => {
+        const card = document.createElement("div");
+        card.className = "image-card deck-card";
+
+        const img = document.createElement("img");
+        img.src = deck.img_name;
+        img.alt = deck.name;
+
+        const title = document.createElement("h3");
+        title.textContent = deck.name;
+
+        const info = document.createElement("p");
+        info.innerHTML = `<strong>Type:</strong> ${deck.type} — <strong>Winrate:</strong> ${deck.winrate}`;
+
+        const desc = document.createElement("p");
+        desc.textContent = deck.description;
+
+        card.appendChild(img);
+        card.appendChild(title);
+        card.appendChild(info);
+        card.appendChild(desc);
+
+        container.appendChild(card);
     });
 };
 
-showCharacters();
+document.addEventListener("DOMContentLoaded", showDecks);

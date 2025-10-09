@@ -7,29 +7,65 @@
     --primary: lightslategray;
     --secondary: slategray;
     --tertiary: darkslategray;
-    --bgr-img: "https://cdnb.artstation.com/p/assets/images/images/008/769/539/large/david-fortin-big-scene-2.jpg?1515183957"
 }
 
-body {
-    margin: 0;
-    padding: 0;    
-    background-image: url(https://cdnb.artstation.com/p/assets/images/images/008/769/539/large/david-fortin-big-scene-2.jpg?1515183957);
-    background-size: cover;
-}    
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--background);
-    z-index: -1;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--slategray);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 #header {
+    position: relative;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/008/769/539/large/david-fortin-big-scene-2.jpg?1515183957");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    color: var(--white);
     text-align: center;
+    overflow: hidden;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--background);
+    z-index: 0;
+    pointer-events: none;
+}
+
+#header > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+body {
+    color: var(--white);
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
 }
 
 .columns {
@@ -48,6 +84,7 @@ body::before {
     border: 1px solid var(--black);
     border-radius: 6px;
     padding: 5px 15px;
+    max-width: calc(100% - 40px);
 }
 
 #main-nav ul {
@@ -56,6 +93,7 @@ body::before {
     padding: 0;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap; 
 }
 
 #main-nav li {
@@ -78,6 +116,9 @@ body::before {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 #middle-info-container2 img {
@@ -86,78 +127,64 @@ body::before {
     object-fit: contain;
     border-radius: 0;
     border: none;
-    box-shadow: none; 
+    box-shadow: none;
 }
 
-#left-text2, 
+#left-text2,
 #right-text2 {
     display: none;
 }
 
-#three-images-container2 {
+.three-images-container,
+.three-images-container2,
+.three-opinions-container,
+.six-images-container {
     display: flex;
-    justify-content: center;
     gap: 40px;
-    margin-top: 40px;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
-#three-images-container2 img {
+.three-images-container img,
+.three-images-container2 img,
+.six-images-container img {
     width: 230px;
     height: 190px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 12px;
     border: 3px solid var(--white);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
 }
 
-#three-images-container2 a img:hover {
+.three-images-container a img:hover,
+.three-images-container2 a img:hover {
     transform: scale(1.05);
 }
 
-
-#three-images-container {
-    display: flex;
-    gap: 53px;
-
-    margin-top: 30px;
-}
-
-#three-images-container p,
-#six-images-container p {
+.three-images-container p,
+.six-images-container p {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     padding: 10px;
     margin-top: 10px;
     color: var(--black);
     line-height: 1.4;
+    max-width: 230px;
 }
 
-#three-opinions-container {
-    display: flex;
-    gap: 53px;
-    justify-content: center;
-    margin-top: 30px;
+.three-opinions-container {
+    gap: 30px;
 }
 
-#opinion {
+.opinion {
     padding: 15px;
     border: 1px solid var(--tertiary);
     background: var(--white);
     border-radius: 8px;
-}
-
-#left-image a {
-    text-decoration: none;
     color: var(--black);
-}
-
-#left-image a:hover {
-    background: var(--gray);
-}
-
-#weekly-opinions, #all-time-opinions, #recent-opinions {
-    text-align: center;
+    width: 260px;
 }
 
 #btn-submit {
@@ -175,38 +202,21 @@ body::before {
     background: var(--white);
 }
 
-#btn-submit a:hover {
-    background: var(--black);
-    color: var(--white);
-    border: 1px solid var(--gray);
-}
-
-#six-images-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10%;
-}
-
 #input {
     text-align: center;
     margin: 20px auto;
     background: var(--white);
     padding: 20px;
     border-radius: 8px;
-    max-width: 400px;
+    max-width: 420px;
+    color: var(--black);
 }
 
 #nav-toggle {
     display: none;
 }
 
-
 @media only screen and (max-width: 768px) {
-
-    body {
-        font-size: 16px;
-    }
-
     #nav-toggle {
         display: block;
         position: absolute;
@@ -230,7 +240,7 @@ body::before {
         background: var(--secondary);
         border: 1px solid var(--black);
         border-radius: 6px;
-        width: 200px;
+        width: 220px;
         z-index: 1000;
     }
 
@@ -253,28 +263,23 @@ body::before {
         text-align: left;
     }
 
-    #middle-info-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    #three-images-container,
-    #three-opinions-container,
-    #six-images-container {
+    .three-images-container,
+    .three-opinions-container,
+    .six-images-container,
+    .three-images-container2 {
         flex-direction: column;
         gap: 20px;
         align-items: center;
         margin-top: 20px;
     }
 
-    #three-images-container img,
-    #six-images-container img {
+    .three-images-container img,
+    .six-images-container img {
         max-width: 90%;
         height: auto;
     }
 
-    #opinion {
+    .opinion {
         width: 90%;
     }
 
@@ -290,13 +295,10 @@ body::before {
         text-align: center;
     }
 
-    #three-images-container2 {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    }
-
-    #three-images-container2 img {
-    
+    /* show left/right texts at larger small-screen widths */
+    @media (min-width: 520px) {
+        #left-text2, #right-text2 {
+            display: block;
+        }
     }
 }
