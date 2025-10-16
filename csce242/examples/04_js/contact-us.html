@@ -36,14 +36,36 @@
             </header>
             <main class="columns">
                 <section class="one">
-                    
+                    <h3>Our Location</h3>
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14664.827625168626!2d-81.0416788842238!3d33.99423897360164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb28ada9ede1%3A0x2ff81595639c7de4!2sColonial%20Life%20Arena!5e0!3m2!1sen!2sus!4v1760456969488!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
                 <section class="one">
-                    <h3>Our Location</h3>
-                    
+                    <form method="POST" id="contact-form">
+
+                        <input type="hidden" name="access_key" value="b6d94d2f-3eb3-4f43-91a3-dbf28612d82a">
+
+                        <p>
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" required>
+                        </p>
+
+                        <p><label for="message">Message: </label></p>
+                        <textarea name="message" required></textarea>
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <button type="submit">Submit Form</button>
+
+                        <div id="contact-result"></div>
+
+                    </form>
                 </section>
             </main>
         </div>
         <script src="js/toggle-nav.js"></script>
+        <script src="js/contact.js"></script>
     </body>
 </html>
