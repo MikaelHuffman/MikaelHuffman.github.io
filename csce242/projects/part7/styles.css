@@ -1,0 +1,330 @@
+:root {
+    --background: rgba(0,0,0,0.3);
+    --black: black;
+    --gray: gray;
+    --white: white;
+
+    --primary: lightslategray;
+    --secondary: slategray;
+    --tertiary: darkslategray;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--slategray);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#header {
+    position: relative;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/008/769/539/large/david-fortin-big-scene-2.jpg?1515183957");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    color: var(--white);
+    text-align: center;
+    overflow: hidden;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--background);
+    z-index: 0;
+    pointer-events: none;
+}
+
+#header > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+body {
+    color: var(--white);
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.columns {
+    display: flex;
+}
+
+#nav-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+#main-nav {
+    background: var(--secondary);
+    border: 1px solid var(--black);
+    border-radius: 6px;
+    padding: 5px 15px;
+    max-width: calc(100% - 40px);
+}
+
+#main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+#main-nav li {
+    margin: 0;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 6px 10px;
+    display: inline-block;
+}
+
+#main-nav a:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+#middle-info-container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#middle-info-container2 img {
+    width: 240px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+#left-text2,
+#right-text2 {
+    display: none;
+}
+
+.three-images-container,
+.three-images-container2,
+.three-opinions-container,
+.six-images-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.three-images-container img,
+.three-images-container2 img,
+.six-images-container img {
+    width: 230px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid var(--white);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.three-images-container a img:hover,
+.three-images-container2 a img:hover {
+    transform: scale(1.05);
+}
+
+.three-images-container p,
+.six-images-container p {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    color: var(--black);
+    line-height: 1.4;
+    max-width: 230px;
+}
+
+.three-opinions-container {
+    gap: 30px;
+}
+
+.opinion {
+    padding: 15px;
+    border: 1px solid var(--tertiary);
+    background: var(--white);
+    border-radius: 8px;
+    color: var(--black);
+    width: 260px;
+}
+
+#btn-submit {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#btn-submit a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 5px;
+    border: 1px solid var(--black);
+    background: var(--white);
+}
+
+#input {
+    text-align: center;
+    margin: 20px auto;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 420px;
+    color: var(--black);
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#image-card a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+#iframe-video-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+
+#contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-form {
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--black);
+    margin-top: 5px;
+    margin-right: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    #nav-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 2rem;
+        background: var(--secondary);
+        color: var(--white);
+        border: none;
+        border-radius: 4px;
+        padding: 6px 10px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    #main-nav {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background: var(--secondary);
+        border: 1px solid var(--black);
+        border-radius: 6px;
+        width: 220px;
+        z-index: 1000;
+    }
+
+    #main-nav.active {
+        display: block;
+    }
+
+    #main-nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #main-nav li {
+        border-bottom: 1px solid var(--gray);
+    }
+
+    #main-nav a {
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .three-images-container,
+    .three-opinions-container,
+    .six-images-container,
+    .three-images-container2 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .three-images-container img,
+    .six-images-container img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .opinion {
+        width: 90%;
+    }
+
+    #input input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    #btn-submit a {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+    }
+
+    @media (min-width: 520px) {
+        #left-text2, #right-text2 {
+            display: block;
+        }
+    }
+}

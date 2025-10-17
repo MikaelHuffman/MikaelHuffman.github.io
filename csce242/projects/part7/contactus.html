@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikael Royale</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div id="header">
+        <h1>Mikael Royale - Clash Royale Tips & Decks</h1>
+    </div>
+    
+    <div id="nav-container">
+        <button id="nav-toggle">☰</button>
+        <div id="main-nav">
+            <ul class="columns">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="mikaeldecks.html">Mikael's Decks</a></li>
+                <li><a href="metadecks.html">Meta Decks</a></li>
+                <li><a href="communityopinions.html">Community Opinions</a></li>
+                <li><a href="submityouropinion.html">Submit Your Opinion</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="page-content">
+        <div id="contact-container">
+                <form method="POST" id="contact-form">
+                    <input type="hidden" name="access_key" value="b6d94d2f-3eb3-4f43-91a3-dbf28612d82a">
+
+                    <p>
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required>
+                    </p> 
+                            
+                    <p><label for="message">Message:</label></p>
+                    <textarea name="message" required></textarea>
+                            
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <p><button type="submit">Submit Form</button></p>
+                            
+
+                    <div id="contact-result"></div>
+                </form>
+        </div>
+    </main>
+    <script src="js/nav.js"></script>
+    <script src="js/json-character-parsing.js"></script>
+</body>
+</html>
